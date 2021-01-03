@@ -1,0 +1,133 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "cedbf6dc-174b-400b-9409-e1f73199920b": {
+        "id": "cedbf6dc-174b-400b-9409-e1f73199920b",
+        "parent": null,
+        "name": "Medicus.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Medicus.js",
+        "cursor": {
+          "lineNumber": 4,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 448,
+          "layers": [],
+          "name": "Medicus"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigmedicus",
+            "config": {
+              "defaultRoute": false,
+              "method": "GET",
+              "route": "/user/{userID}"
+            }
+          }
+        ],
+        "lastUpdated": 1609657553449,
+        "testCases": {
+          "affe771d-e65f-4218-a418-34b4baeb051e": {
+            "id": "affe771d-e65f-4218-a418-34b4baeb051e",
+            "name": "Test event",
+            "functionId": "cedbf6dc-174b-400b-9409-e1f73199920b",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "0c58a6b8-3769-4d16-ab32-b063f376a290": {
+        "id": "0c58a6b8-3769-4d16-ab32-b063f376a290",
+        "parent": null,
+        "name": "common",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "bcdd7071-fbda-4ec5-9bbf-0da64785ed2b"
+        ],
+        "isRemovable": true,
+        "filePath": "common"
+      },
+      "bcdd7071-fbda-4ec5-9bbf-0da64785ed2b": {
+        "id": "bcdd7071-fbda-4ec5-9bbf-0da64785ed2b",
+        "parent": "0c58a6b8-3769-4d16-ab32-b063f376a290",
+        "name": "event-util.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "common/event-util.js",
+        "lastUpdated": 1609656476354,
+        "cursor": {
+          "lineNumber": 2,
+          "column": 53
+        }
+      }
+    },
+    "openFiles": [
+      "cedbf6dc-174b-400b-9409-e1f73199920b",
+      "bcdd7071-fbda-4ec5-9bbf-0da64785ed2b"
+    ],
+    "currentFileId": "cedbf6dc-174b-400b-9409-e1f73199920b",
+    "resources": {
+      "httpApigmedicus": {
+        "name": "httpApigmedicus",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "medicus",
+          "stageName": "$default",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.5.0",
+    "projectName": "Medicus",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-central-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1609658874570
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "medicus",
+      "url": "https://github.com/MedicusIO/medicus"
+    }
+  }
+}
